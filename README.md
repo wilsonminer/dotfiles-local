@@ -12,12 +12,12 @@ Install
 
 Install my fork of Thoughtbot's dotfiles:
 
-    git clone git://github.com/wilsonminer/dotfiles.git
-    env RCRC=$HOME/dotfiles/rcrc rcup
+    git clone git://github.com/wilsonminer/dotfiles.git ~/Code/dotfiles
+    env RCRC=$HOME/Code/dotfiles/rcrc rcup
 
-Then clone mine:
+Then clone this repo:
 
-    git clone git://github.com/wilsonminer/dotfiles-local.git ~/dotfiles-local
+    git clone git://github.com/wilsonminer/dotfiles-local.git ~/Code/dotfiles-local
 
 And re-run rcup to link:
 
