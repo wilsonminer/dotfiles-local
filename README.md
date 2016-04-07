@@ -1,16 +1,14 @@
-my dotfiles
+dotfiles
 ===================
 I use a fork of Thoughtbot's [dotfiles](https://github.com/wilsonminer/dotfiles) as the
-foundation of my personal configuration. These files are the `.local`
-modifications that build on top of the foundation.
+foundation of my personal configuration.
 
-Requirements
-------------
+These files are my `.local` modifications that build on top of the basic configuration.
 
 Install
 -------
 
-Install my fork of Thoughtbot's dotfiles:
+Install my fork of Thoughtbot's dotfiles (the only difference is mine looks for dotfiles in `~/Code` instead of `~/`):
 
     git clone git://github.com/wilsonminer/dotfiles.git ~/Code/dotfiles
     env RCRC=$HOME/Code/dotfiles/rcrc rcup
