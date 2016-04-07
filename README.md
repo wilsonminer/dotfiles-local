@@ -1,13 +1,14 @@
-dotfiles
-===================
-I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) as the starting point for my configuration.
+# dotfiles
 
-These files are my  `.local` that bulid on that foundation.
+I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) and manage it with [rcm](https://github.com/thoughtbot/rcm).
 
-Install
--------
+These are my  `.local` files that add to the base config.
 
-Install Thoughtbot's dotfiles:
+## Set up a new machine
+
+First, run Thoughtbot's [laptop setup script](https://github.com/thoughtbot/laptop) to set up a new machine with some basic development defaults.
+
+Get Thoughtbot's dotfiles:
 
     git clone git://github.com/wilsonminer/dotfiles.git ~/Code/dotfiles
 
@@ -19,27 +20,10 @@ And rcup to link:
 
     env RCRC=$HOME/Code/dotfiles-local/rcrc rcup
 
-This will create symlinks for config files in your home directory from Thoughtbot's dotfiles and my local customizations.
+This will create symlinks for config files in your home directory from Thoughtbot's dotfiles with these local customizations.
 
 After the initial setup, you can safely run `rcup` multiple times to update, without setting the environment variables:
 
     rcup
 
-What's in it?
--------------
-
-My custom additions to [thoughtbot's laptop setup script](https://github.com/thoughtbot/laptop)
-
-* Generate SSH keys if they don't exist and prompt to add them to Github and Bitbucket
-* Install basic software with Homebrew Cask
-* Check out some git repositories to `~/Code`
-* TODO: Personal gitconfig
-* TODO: Install starred Atom packages
-
-Credits
--------
-Most of my configuration is small changes on top of thoughtbot's dotfiles.
-They have a series of blog posts about dotfile configuration at their
-[blog](http://robots.thoughtbot.com).
-
-This software is free and distributable under the MIT license.
+Next, run the [laptop setup script](https://github.com/thoughtbot/laptop) again, which will now include the extra scripts from this config.
