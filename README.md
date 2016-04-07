@@ -27,3 +27,10 @@ After the initial setup, you can safely run `rcup` multiple times to update, wit
     rcup
 
 Next, run the [laptop setup script](https://github.com/thoughtbot/laptop) again, which will now include the extra scripts from this config.
+
+## TODO
+
+* Set OS X defaults
+* iTerm colors
+* VIM plugins and colors
+* Install fonts
