@@ -1,0 +1,75 @@
+#!/bin/sh
+fancy_echo "Checking for SSH key, generating one if it doesn't exist ..."
+  [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
+
+echo "Copying public key to clipboard. Paste it into your accounts ..."
+  [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | pbcopy
+  open https://github.com/account/ssh
+  open https://bitbucket.org/account/ssh-keys/
+
+fancy_echo "Installing apps from Homebrew Cask ..."
+brew bundle --file=- <<EOF
+cask_args appdir: "/Applications"
+tap "caskroom/versions"
+
+# Essentials
+cask "1password"
+cask "dropbox"
+cask "google-chrome"
+cask "alfred"
+cask "moom"
+cask "google-drive"
+cask "fantastical"
+cask "slack"
+
+# Design 
+cask "adobe-creative-cloud"
+cask "adobe-photoshop-cc"
+cask "adobe-indesign-cc"
+cask "adobe-illustrator-cc"
+cask "adobe-bridge-cc"
+cask "sketch"
+cask "sketch-beta"
+
+# Dev
+cask "atom"
+cask "tower"
+cask "imageoptim"
+cask "iterm2-beta"
+EOF
+
+fancy_echo "Cleaning up old Homebrew formulae ..."
+brew cleanup
+brew cask cleanup
+
+
+if [ -r "$HOME/.rcrc" ]; then
+  fancy_echo "Updating dotfiles ..."
+  rcup
+fi
+
+git_clone_or_pull() {
+  local REPOSRC=$1
+  local LOCALREPO=$2
+  local LOCALREPO_VC_DIR=$LOCALREPO/.git
+  if [[ ! -d "$LOCALREPO_VC_DIR" ]]; then
+    git clone --recursive $REPOSRC $LOCALREPO
+  else
+    pushd $LOCALREPO
+    git pull $REPOSRC && git submodule update --init --recursive
+    popd
+  fi
+}
+
+fancy_echo "Updating Git repositories ..."
+git_clone_or_pull "git@bitbucket.org:/calsunday/csm-site-grunt.git" "$HOME/Code/csm-site"
+git_clone_or_pull "git@bitbucket.org:/calsunday/popup-site-jekyll.git" "$HOME/Code/popup-site"
+git_clone_or_pull "git@bitbucket.org:/calsunday/csm-storyforge.git" "$HOME/Code/csm-storyforge"
+git_clone_or_pull "git@bitbucket.org:/wilsonminer/wilsonminer.com.git" "$HOME/Code/wilsonminer.com"
+git_clone_or_pull "git@github.com:wilsonminer/dotfiles.git" "$HOME/Code/dotfiles"
+git_clone_or_pull "git@github.com:wilsonminer/dotfiles-local" "$HOME/Code/dotfiles-local"
+
+# Save this until apm is smarter about reinstalling packages
+# https://github.com/atom/apm/issues/170
+# fancy_echo "Installing Atom packages ..."
+# apm starred --install
