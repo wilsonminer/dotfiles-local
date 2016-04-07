@@ -22,7 +22,7 @@ cask "google-drive"
 cask "fantastical"
 cask "slack"
 
-# Design 
+# Design
 cask "adobe-creative-cloud"
 cask "adobe-photoshop-cc"
 cask "adobe-indesign-cc"
@@ -66,7 +66,7 @@ git_clone_or_pull "git@bitbucket.org:/calsunday/csm-site-grunt.git" "$HOME/Code/
 git_clone_or_pull "git@bitbucket.org:/calsunday/popup-site-jekyll.git" "$HOME/Code/popup-site"
 git_clone_or_pull "git@bitbucket.org:/calsunday/csm-storyforge.git" "$HOME/Code/csm-storyforge"
 git_clone_or_pull "git@bitbucket.org:/wilsonminer/wilsonminer.com.git" "$HOME/Code/wilsonminer.com"
-git_clone_or_pull "git@github.com:wilsonminer/dotfiles.git" "$HOME/Code/dotfiles"
+git_clone_or_pull "git@github.com:thoughtbot/dotfiles.git" "$HOME/Code/dotfiles"
 git_clone_or_pull "git@github.com:wilsonminer/dotfiles-local" "$HOME/Code/dotfiles-local"
 
 # Save this until apm is smarter about reinstalling packages
