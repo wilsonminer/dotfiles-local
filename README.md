@@ -1,6 +1,6 @@
 dotfiles
 ===================
-I use a fork of Thoughtbot's [dotfiles](https://github.com/wilsonminer/dotfiles) as the
+I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) as the
 foundation of my personal configuration.
 
 These files are my `.local` modifications that build on top of the basic configuration.
@@ -8,23 +8,22 @@ These files are my `.local` modifications that build on top of the basic configu
 Install
 -------
 
-Install my fork of Thoughtbot's dotfiles (the only difference is mine looks for dotfiles in `~/Code` instead of `~/`):
+Install Thoughtbot's dotfiles:
 
     git clone git://github.com/wilsonminer/dotfiles.git ~/Code/dotfiles
-    env RCRC=$HOME/Code/dotfiles/rcrc rcup
 
 Then clone this repo:
 
     git clone git://github.com/wilsonminer/dotfiles-local.git ~/Code/dotfiles-local
 
-And re-run rcup to link:
+And rcup to link:
 
-    rcup
+    env RCRC=$HOME/Code/dotfiles-local/rcrc rcup
 
 This will create symlinks for config files in your home directory from
 Thoughtbot's dotfiles and my local customizations.
 
-You can safely run `rcup` multiple times to update:
+After the initial setup, you can safely run `rcup` multiple times to update, without setting the environment variables:
 
     rcup
 
