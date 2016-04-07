@@ -19,7 +19,6 @@ cask "google-chrome"
 cask "alfred"
 cask "moom"
 cask "google-drive"
-cask "fantastical"
 cask "slack"
 
 # Design
