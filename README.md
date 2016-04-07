@@ -38,6 +38,7 @@ My custom additions to [thoughtbot's laptop setup script](https://github.com/tho
 * Generate SSH keys if they don't exist and prompt to add them to Github and Bitbucket
 * Install basic software with Homebrew Cask
 * Check out some git repositories to `~/Code`
+* TODO: Personal gitconfig
 * TODO: Install starred Atom packages
 
 Credits
