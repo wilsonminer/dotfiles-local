@@ -1,2 +1,3 @@
-LUDES="README.md LICENSE"
+EXCLUDES="README.md LICENSE"
 DOTFILES_DIRS="$HOME/Code/dotfiles-local $HOME/Code/dotfiles"
+SYMLINK_DIRS="atom"

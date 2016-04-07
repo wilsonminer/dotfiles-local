@@ -1,0 +1,47 @@
+"*":
+  core:
+    packagesWithKeymapsDisabled: [
+      "tool-bar"
+    ]
+    projectHome: "/Users/wilson/Code"
+    themes: [
+      "one-dark-ui"
+      "duotone-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "308559c6-c46d-4d88-b67a-d9c042b3d6d2"
+  "file-icons":
+    coloured: false
+  "git-control":
+    showGitFlowButton: false
+  jekyll: {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "one-dark-ui":
+    layoutMode: "Spacious"
+  "tool-bar":
+    position: "Right"
+  "tool-bar-almighty": {}
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    showOnRightSide: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
