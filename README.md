@@ -1,9 +1,8 @@
 dotfiles
 ===================
-I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) as the
-foundation of my personal configuration.
+I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) as the starting point for my configuration.
 
-These files are my `.local` modifications that build on top of the basic configuration.
+These files are my  `.local` that bulid on that foundation.
 
 Install
 -------
@@ -20,8 +19,7 @@ And rcup to link:
 
     env RCRC=$HOME/Code/dotfiles-local/rcrc rcup
 
-This will create symlinks for config files in your home directory from
-Thoughtbot's dotfiles and my local customizations.
+This will create symlinks for config files in your home directory from Thoughtbot's dotfiles and my local customizations.
 
 After the initial setup, you can safely run `rcup` multiple times to update, without setting the environment variables:
 
