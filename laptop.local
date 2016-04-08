@@ -44,7 +44,7 @@ brew cleanup
 brew cask cleanup
 
 fancy_echo "Installing NPM global packages ..."
-npm install -g grunt-cli gulp imageoptim
+npm update -g grunt-cli gulp imageoptim
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
@@ -76,3 +76,6 @@ git_clone_or_pull "git@github.com:wilsonminer/dotfiles-local" "$HOME/Code/dotfil
 # https://github.com/atom/apm/issues/170
 # fancy_echo "Installing Atom packages ..."
 # apm starred --install
+
+fancy_echo "Setting OS X defaults ..."
+source "$HOME/.osx"
