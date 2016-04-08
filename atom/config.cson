@@ -19,6 +19,9 @@
     coloured: false
   "git-control":
     showGitFlowButton: false
+  "git-projects":
+    rootPath: "/Users/wilson/Code"
+    sortBy: "Latest modification date"
   jekyll: {}
   minimap:
     plugins:

@@ -30,7 +30,7 @@ Next, run the [laptop setup script](https://github.com/thoughtbot/laptop) again,
 
 ## TODO
 
-* Set OS X defaults
+* OS X defaults
 * iTerm colors
 * VIM plugins and colors
 * Install fonts
