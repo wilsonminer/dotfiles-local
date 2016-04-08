@@ -7,8 +7,10 @@ echo "Copying public key to clipboard. Paste it into your accounts ..."
   open https://github.com/account/ssh
   open https://bitbucket.org/account/ssh-keys/
 
-fancy_echo "Installing apps from Homebrew Cask ..."
+fancy_echo "Additional Homebrew installs ..."
 brew bundle --file=- <<EOF
+brew "graphicsmagick"
+
 cask_args appdir: "/Applications"
 tap "caskroom/versions"
 
@@ -40,6 +42,9 @@ EOF
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
 brew cask cleanup
+
+fancy_echo "Installing NPM global packages ..."
+npm install -g grunt-cli gulp imageoptim
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
