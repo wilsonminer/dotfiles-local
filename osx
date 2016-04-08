@@ -13,7 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Wilson’s MBP"
+sudo scutil --set ComputerName "Wilson MBP"
 sudo scutil --set HostName "wilson-mbp"
 sudo scutil --set LocalHostName "wilson-mbp"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "wilson-mbp"
@@ -82,6 +82,9 @@ sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
 sudo systemsetup -setcomputersleep Off > /dev/null
+
+# Turn on auto updates
+sudo softwareupdate --schedule
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
