@@ -10,6 +10,7 @@
       "duotone-dark-syntax"
     ]
   editor:
+    fontFamily: "Fira Code"
     invisibles: {}
     showIndentGuide: true
     softWrap: true
