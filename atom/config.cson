@@ -2,6 +2,7 @@
   core:
     packagesWithKeymapsDisabled: [
       "tool-bar"
+      "jekyll"
     ]
     projectHome: "/Users/wilson/Code"
     themes: [
@@ -22,7 +23,14 @@
   "git-projects":
     rootPath: "/Users/wilson/Code"
     sortBy: "Latest modification date"
-  jekyll: {}
+  jekyll:
+    buildCommand: [
+      "/Users/wilson/.rbenv/shims/jekyll"
+      "build"
+      "--future"
+      "--drafts"
+    ]
+    serverPort: 4000
   minimap:
     plugins:
       "find-and-replace": true
@@ -45,6 +53,5 @@
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
     showOnRightSide: true
-    squashDirectoryNames: true
   welcome:
     showOnStartup: false

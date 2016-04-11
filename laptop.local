@@ -19,7 +19,6 @@ cask "1password"
 cask "dropbox"
 cask "google-chrome"
 cask "alfred"
-cask "moom"
 cask "google-drive"
 cask "slack"
 
@@ -44,7 +43,7 @@ brew cleanup
 brew cask cleanup
 
 fancy_echo "Installing NPM global packages ..."
-npm update -g grunt-cli gulp imageoptim
+npm update -g grunt-cli gulp
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
