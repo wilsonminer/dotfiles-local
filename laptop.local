@@ -34,6 +34,7 @@ cask "sketch-beta"
 # Dev
 cask "atom"
 cask "tower"
+cask "gitup"
 cask "imageoptim"
 cask "iterm2-beta"
 EOF
