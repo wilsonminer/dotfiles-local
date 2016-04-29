@@ -1,5 +1,74 @@
 "*":
+  "atom-beautify":
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "39a7a337-27d0-41ea-99cc-7d06d7b579e8"
+    gherkin: {}
+    handlebars: {}
+    html: {}
+    jade: {}
+    java: {}
+    js: {}
+    json: {}
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
   core:
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".unison"
+      "CVS"
+      ".AppleDouble"
+      ".LSOverride"
+      ".Spotlight-V100"
+      ".Trashes"
+      "desktop.ini"
+      "*.lock"
+      "*.sock"
+      "*.pid"
+      "*.sw?"
+      ".unison*"
+      "*~"
+    ]
     packagesWithKeymapsDisabled: [
       "tool-bar"
       "jekyll"
@@ -44,6 +113,8 @@
       linterDecorationsZIndex: 0
       pigments: true
       pigmentsDecorationsZIndex: 0
+  nitrogen:
+    showWelcomeOnStartup: false
   "one-dark-ui":
     layoutMode: "Spacious"
   "terminal-plus":
