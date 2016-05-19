@@ -48,6 +48,9 @@
     xml: {}
     xtemplate: {}
   core:
+    disabledPackages: [
+      "spell-check"
+    ]
     ignoredNames: [
       ".git"
       ".hg"
@@ -79,7 +82,8 @@
       "duotone-dark-syntax"
     ]
   editor:
-    fontFamily: "Fira Code"
+    fontFamily: "Operator Mono"
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     softWrap: true
@@ -101,6 +105,8 @@
       "--drafts"
     ]
     serverPort: 4000
+  "linter-js-standard":
+    checkStyleDevDependencies: true
   minimap:
     plugins:
       "find-and-replace": true
@@ -117,6 +123,12 @@
     showWelcomeOnStartup: false
   "one-dark-ui":
     layoutMode: "Spacious"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
   "terminal-plus":
     ansiColors:
       normal:
@@ -250,7 +262,7 @@
         alpha: 1
     style:
       animationSpeed: 2
-      fontFamily: "Fira Code"
+      fontFamily: "Operator Mono"
   "tool-bar":
     position: "Right"
   "tool-bar-almighty": {}
