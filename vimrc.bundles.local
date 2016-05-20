@@ -1,0 +1,14 @@
+" sort lines and lists with gs
+Plug 'christoomey/vim-sort-motion'
+
+" replace without overwriting the register with gr
+Plug 'vim-scripts/ReplaceWithRegister'
+
+" add new targets for select in and around
+Plug 'wellle/targets.vim'
+
+" select single unit of indentation
+Plug 'michaeljsmith/vim-indent-object'
+
+" fast fuzzy file navigation
+Plug 'wincent/command-t'

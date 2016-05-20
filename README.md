@@ -30,9 +30,7 @@ Next, run the [laptop setup script](https://github.com/thoughtbot/laptop) again,
 
 ## TODO
 
-* Run OSX defaults from laptop script
 * Alfred prefs/workflows/powerpack
-* iTerm colors
 * VIM plugins and colors
 * Install fonts
 * Moom preferences
