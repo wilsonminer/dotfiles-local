@@ -50,6 +50,10 @@
   core:
     disabledPackages: [
       "spell-check"
+      "ex-mode"
+      "vim-mode"
+      "vim-mode-plus"
+      "language-gfm"
     ]
     ignoredNames: [
       ".git"
@@ -86,8 +90,8 @@
     fontSize: 15
     invisibles: {}
     showIndentGuide: true
+    showInvisibles: true
     softWrap: true
-    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "308559c6-c46d-4d88-b67a-d9c042b3d6d2"
   "file-icons":
@@ -269,7 +273,6 @@
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
   welcome:
     showOnStartup: false

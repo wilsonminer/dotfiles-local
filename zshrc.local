@@ -1,1 +1,10 @@
+# go
 export GOPATH=$HOME/Code/go
+
+# pure prompt
+autoload -U promptinit && promptinit
+prompt pure
+
+# unicode defaults
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
