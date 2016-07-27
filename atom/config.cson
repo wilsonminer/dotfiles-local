@@ -51,9 +51,9 @@
     disabledPackages: [
       "spell-check"
       "ex-mode"
+      "language-gfm"
       "vim-mode"
       "vim-mode-plus"
-      "language-gfm"
     ]
     ignoredNames: [
       ".git"

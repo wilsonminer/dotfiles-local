@@ -18,3 +18,22 @@ noremap Y y$
 " handy when you are in the middle of a line and would like to go to its end
 " without switching to the normal mode.
 inoremap <C-e> <C-o>$
+
+" Remove 80char marker from thoughtbot config 
+highlight ColorColumn ctermbg=None
+
+" Keep cursor vertically centered
+set so=999
+
+" Color theme
+set background=light
+colorscheme one
+
+"Use 24-bit (true-color) mode
+if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+  set termguicolors
+endif

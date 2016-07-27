@@ -12,3 +12,10 @@ Plug 'michaeljsmith/vim-indent-object'
 
 " fast fuzzy file navigation
 Plug 'wincent/command-t'
+
+" Colors
+Plug 'rakr/vim-one'
+
+" Syntax
+Plug 'tpope/vim-liquid'
+Plug 'tpope/vim-markdown'
