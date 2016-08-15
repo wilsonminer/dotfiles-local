@@ -47,12 +47,14 @@
     visualforce: {}
     xml: {}
     xtemplate: {}
+  "base16-syntax":
+    scheme: "Atelier Cave"
   core:
     disabledPackages: [
       "spell-check"
-      "ex-mode"
       "language-gfm"
       "vim-mode"
+      "ex-mode"
       "vim-mode-plus"
     ]
     ignoredNames: [
@@ -86,12 +88,13 @@
       "duotone-dark-syntax"
     ]
   editor:
-    fontFamily: "Operator Mono"
-    fontSize: 15
+    fontFamily: "Input Mono"
     invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "308559c6-c46d-4d88-b67a-d9c042b3d6d2"
   "file-icons":
@@ -101,6 +104,7 @@
   "git-projects":
     rootPath: "/Users/wilson/Code"
     sortBy: "Latest modification date"
+  "highlight-line": {}
   jekyll:
     buildCommand: [
       "/Users/wilson/.rbenv/shims/jekyll"
@@ -266,7 +270,9 @@
         alpha: 1
     style:
       animationSpeed: 2
-      fontFamily: "Operator Mono"
+      fontFamily: "Input Mono"
+    toggles:
+      autoClose: true
   "tool-bar":
     position: "Right"
   "tool-bar-almighty": {}

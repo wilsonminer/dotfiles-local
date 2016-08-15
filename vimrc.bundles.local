@@ -13,9 +13,12 @@ Plug 'michaeljsmith/vim-indent-object'
 " fast fuzzy file navigation
 Plug 'wincent/command-t'
 
-" Colors
-Plug 'rakr/vim-one'
+" show colors in css files
+Plug 'skammer/vim-css-color'
 
-" Syntax
+" colorscheme
+Plug 'atelierbram/Base2Tone-vim'
+
+" syntax
 Plug 'tpope/vim-liquid'
 Plug 'tpope/vim-markdown'

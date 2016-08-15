@@ -19,15 +19,12 @@ noremap Y y$
 " without switching to the normal mode.
 inoremap <C-e> <C-o>$
 
-" Remove 80char marker from thoughtbot config 
-highlight ColorColumn ctermbg=None
-
 " Keep cursor vertically centered
 set so=999
 
-" Color theme
-set background=light
-colorscheme one
+" Color scheme
+set background=dark
+colorscheme Base2Tone-Evening-dark
 
 "Use 24-bit (true-color) mode
 if (has("nvim"))
@@ -37,3 +34,6 @@ endif
 if (has("termguicolors"))
   set termguicolors
 endif
+
+" Remove 80char marker from thoughtbot config 
+highlight ColorColumn ctermbg=None
